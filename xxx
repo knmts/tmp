@@ -1,0 +1,37 @@
+For my study...
+
+```sh
+gh run list -R my-organization/my-repository
+STATUS  TITLE                             WORKFLOW                                    BRANCH                                        EVENT         ID           ELAPSED   AGE
+*       collect_allwords_overflowの実装2  cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow2  pull_request  19259302212  42m56s    about 42 minutes ago
+X       collect_allwords_overflowの実装2  generate-validations                        feature/github-ci-collect_allwords_overflow2  pull_request  19259302211  3m37s     about 42 minutes ago
+*       collect_allwords_overflowの実装   cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow   pull_request  19257179003  2h24m49s  about 2 hours ago
+X       collect_allwords_overflowの実装   generate-validations                        feature/github-ci-collect_allwords_overflow   pull_request  19257178988  13s       about 2 hours ago
+X       collect_allwords_overflowの実装   generate-validations                        feature/github-ci-collect_allwords_overflow   pull_request  19256993843  58s       about 2 hours ago
+*       collect_allwords_overflowの実装   cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow   pull_request  19256993809  2h34m4s   about 2 hours ago
+*       collect_allwords_overflowの実装   cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow   pull_request  19256769769  2h45m28s  about 2 hours ago
+X       collect_allwords_overflowの実装   generate-validations                        feature/github-ci-collect_allwords_overflow   pull_request  19256769767  3m30s     about 2 hours ago
+X       collect_allwords_overflowの実装   generate-validations                        feature/github-ci-collect_allwords_overflow   pull_request  19255928664  2m57s     about 3 hours ago
+*       collect_allwords_overflowの実装   cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow   pull_request  19255928662  3h31m31s  about 3 hours ago
+X       collect_allwords_overflowの実装   cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow   pull_request  19252545018  3h54m1s   about 6 hours ago
+X       collect_allwords_overflowの実装   generate-validations                        feature/github-ci-collect_allwords_overflow   pull_request  19252544986  13s       about 6 hours ago
+X       collect_allwords_overflowの実装   cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow   pull_request  19252270171  16m3s     about 7 hours ago
+X       collect_allwords_overflowの実装   generate-validations                        feature/github-ci-collect_allwords_overflow   pull_request  19252270169  2m39s     about 7 hours ago
+X       collect_allwords_overflowの実装   cron-all-words-collect-overflow-jp-group-0  feature/github-ci-collect_allwords_overflow   pull_request  19250659830  2h13m49s  about 8 hours ago
+X       collect_allwords_overflowの実装   generate-validations                        feature/github-ci-collect_allwords_overflow   pull_request  19250659802  3m41s     about 8 hours ago
+X       cron-validate-cdc                 cron-validate-cdc                           main                                          schedule      19228752123  0s        about 22 hours ago
+X       cron-validate-cdc                 cron-validate-cdc                           main                                          schedule      19207217714  1s        about 1 day ago
+X       cron-all-words-overflow-na        cron-all-words-overflow-na                  main                                          schedule      19193480965  1s        about 2 days ago
+X       cron-validate-cdc                 cron-validate-cdc                           main                                          schedule      19191861731  0s        about 2 days ago
+```
+
+```sh
+gh run cancel --force 19255928662 -R my-organization/my-repository
+✓ Request to force cancel workflow 19255928662 submitted.
+gh run cancel --force 19256769769 -R my-organization/my-repository
+✓ Request to force cancel workflow 19256769769 submitted.
+gh run cancel --force 19256993809 -R my-organization/my-repository
+✓ Request to force cancel workflow 19256993809 submitted.
+gh run cancel --force 19257179003 -R my-organization/my-repository
+✓ Request to force cancel workflow 19257179003 submitted.
+```
